@@ -171,7 +171,7 @@ public final class HomeActivity extends AppActivity implements NavigationAdapter
         new UpdateDialog.Builder(getContext())
                 .setFileMd5(appUpdateInfo.apkHash)
                 .setDownloadUrl(appUpdateInfo.url)
-                .setForceUpdate(forceUpdateApp)
+                .setForceUpdate(false)
                 .setUpdateLog(appUpdateInfo.updateLog)
                 .setVersionName(appUpdateInfo.versionName)
                 .show();
